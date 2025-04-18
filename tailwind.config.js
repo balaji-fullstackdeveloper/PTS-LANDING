@@ -8,7 +8,69 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        slideUp: {
+          "0%": {
+            transform: "translateY(100%)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: "1",
+          },
+        },
+        zoomIn: {
+          "0%": {
+            transform: "scale(0.5)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "scale(1)",
+            opacity: "1",
+          },
+        },
+        slideFromRight: {
+          "0%": {
+            transform: "translateX(100%)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateX(0)",
+            opacity: "1",
+          },
+        },
+        slideFromLeft: {
+          "0%": {
+            transform: "translateX(-100%)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateX(0)",
+            opacity: "1",
+          },
+        },
+        slideIn: {
+          "0%": {
+            transform: "translateY(-100%)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: "1",
+          },
+        },
+      },
+      animation: {
+        "slide-up": "slideUp 0.3s ease-out forwards",
+        "zoom-in": "zoomIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards",
+        "zoom-in-scroll": "zoomIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards",
+        "slide-right":
+          "slideFromRight 1s cubic-bezier(0.4, 0, 0.2, 1) forwards",
+        "slide-left": "slideFromLeft 1s cubic-bezier(0.4, 0, 0.2, 1) forwards",
+        "slide-in": "slideIn 0.5s ease-out forwards",
+      },
       colors: {
+      
         primary: {
           50: "#F0F7FF",
           100: "#E0F0FF",
