@@ -1,0 +1,93 @@
+<section class="bg-[#F1F1FF] pt-[290px] pb-[60px]"><div>
+    <div class="container-custom">
+        <div class="text-center mx-auto">
+       <div><p class="text-2xl my-[16px]">What Our Customers Say</p>
+    <p class="text-[16px] mb-[40px]">Hear From Businesses We`ve Empowered</p></div>  
+    <div>
+        <div class="flex justify-center   rounded-3xl gap-[20px]  card-container">
+            <div class="bg-white rounded-3xl min-w-[311px] max-w-[311px] min-h-[311px] h-full  py-[40px] px-[20px] flex flex-col gap-[30px] ">
+              <img src="./assets/images/Group 31.svg" alt="hero" class="w-[40px] h-[40px]"/>
+                  <p class="text-start font-[400]">With BMS, maintenance activities are now easier to manage, and the automated escalations ensure we never miss a critical update. Outstanding solution for railways!</p>  
+                    <div  class="flex">
+                       <img src="./assets/images/Mask group.png" alt="hero" class=""/>
+            <div>
+                <p class="text-start">Sri Murali Krishnan, CSE</p>
+                <img src="./assets/images/image.png" alt="hero" class=""/>
+    
+            </div>
+                    </div>
+            </div>
+            <div class="bg-white min-w-[311px] max-w-[311px] min-h-[311px] h-full rounded-3xl py-[40px] px-[20px] flex flex-col gap-[30px] ">
+                <img src="./assets/images/Group 31.svg" alt="hero" class="w-[40px] h-[40px]"/>
+                    <p class="text-start font-[400]">The Block Management System has completely transformed how we manage maintenance and approvals. The real-time notifications and seamless workflow have significantly reduced delays and improved efficiency.</p>  
+                      <div  class="flex">
+                         <img src="./assets/images/Mask group.png" alt="hero" class=""/>
+              <div>
+                  <p class="text-start">Sri Ramprasad, Senior DSTE</p>
+                  <img src="./assets/images/image.png" alt="hero" class=""/>
+      
+              </div>
+                      </div>
+              </div>  
+               <div class="bg-white min-w-[311px] max-w-[311px] min-h-[311px] h-full rounded-3xl py-[40px] px-[20px] flex flex-col gap-[30px] ">
+                <img src="./assets/images/Group 31.svg" alt="hero" class="w-[40px] h-[40px]"/>
+                    <p class="text-start font-[400]">This system ensures no request is overlooked, and the detailed audit trails are a game-changer for compliance. A must-have for any division!</p>  
+                      <div  class="flex">
+                         <img src="./assets/images/Mask group.png" alt="hero" class=""/>
+              <div>
+                  <p class="text-start">Sri Gopala Krishnan, SSE</p>
+                  <img src="./assets/images/image.png" alt="hero" class=""/>
+      
+              </div>
+                      </div>
+              </div>  
+        </div>
+    </div>
+</div></section>
+<style>
+    .card-container {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+   
+        display: flex;
+
+     
+        scroll-padding-left: 10px;
+      
+    }
+    .card-container::-webkit-scrollbar {
+        display: none;
+    }
+ 
+    @media (max-width: 768px) {
+        .card-container {
+            padding-left: 20px;
+            padding-right: 20px;
+            justify-content: flex-start;
+        }
+    }
+</style><script>
+    function isMobileScreen() {
+        return window.innerWidth <= 768; // Mobile breakpoint
+    }
+
+    const cardContainer = document.querySelector('.card-container');
+    
+    cardContainer.addEventListener('wheel', function(event) {
+        if (isMobileScreen()) {
+            event.preventDefault();
+            this.scrollLeft += event.deltaY;
+        }
+    });
+
+    // Update on window resize
+    window.addEventListener('resize', function() {
+        if (!isMobileScreen()) {
+            cardContainer.scrollLeft = 0; // Reset scroll position when switching to desktop
+        }
+    });
+</script>

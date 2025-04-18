@@ -1,0 +1,53 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.env
+
+# Build output
+dist/
+build/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Editor-specific
+.vscode/
+.idea/
+*.swp
+
+# MongoDB dump files
+dump/
+
+# Coverage
+coverage/
+*.lcov
+
+# React
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# Optional: If you're using uploads/images folder for user uploads
+uploads/
+public/uploads/
+
+# Optional: Ignore test snapshots
+__snapshots__/
+
+# Optional: PM2 logs
+pids/
+*.pid
+*.seed
+
+# Mac system files
+*.DS_Store

@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+.container-custom {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem; /* px-4 = 16px */
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  /* sm breakpoint */
+  .container-custom {
+    padding-left: 1.5rem; /* px-6 = 24px */
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* lg breakpoint */
+  .container-custom {
+    padding-left: 2rem; /* px-8 = 32px */
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  .container-custom {
+    max-width: 1440px;
+  }
+}
+@layer components {
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-md font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary/90 focus:ring-primary/50;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-secondary/90 focus:ring-secondary/50;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-white focus:ring-primary/50;
+  }
+}
+
+/* Custom styles */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+.slide-container {
+  height: 100px;
+  overflow: hidden;
+}
+ul.v-slides {
+  list-style-type: none;
+  padding: 0;
+  top: 5px;
+  position: relative;
+}
+.v-slide {
+  color: #878787;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+
+  transform: translate(-50%);
+
+  min-width: 350px;
+  text-align: start;
+}
+
+.slide-container2 {
+  height: 100px;
+}
+ul.v2-slides {
+  list-style-type: none;
+
+  position: relative;
+}
+.v2-slide {
+  color: #878787;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+
+  transform: translate(-50%);
+
+  min-width: 350px;
+  text-align: start;
+}

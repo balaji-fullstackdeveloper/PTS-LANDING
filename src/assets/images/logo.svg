@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40" fill="none">
+  <rect width="40" height="40" rx="8" fill="#0077B6"/>
+  <path d="M10 20L18 28L30 12" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="46" y="26" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#023E8A">Platter</text>
+</svg> 

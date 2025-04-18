@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platter Tech - IT Solutions</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.2/dist/gsap.min.js"></script>
+
+  <!-- SplitText -->
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class=" font-outfit text-gray-800">
+  
+  <header class="py-4 container-custom">
+  <div
+    class="relative flex justify-between items-center rounded-full bg-[#F1F1FF] md:min-h-[64px] 2xl:h-[8vh] py-[6px]"
+  >
+    <a href="/" class="flex items-center">
+      <img
+        src="./assets/images/Group 34686.svg"
+        alt="logo"
+        class="h-[50px] w-[50px] ml-2 mr-4"
+      />
+      <span class="ml-2 text-lg 2xl:text-xl font-medium text-[#252525]"
+        >Plattr Tech Studio</span
+      >
+    </a>
+
+    <div class="flex items-center mr-2 gap-[90px]">
+      <nav class="hidden md:flex items-center gap-5 text-base">
+        <a href="/" class="font-normal text-gray-900 hover:text-blue-600"
+          >What We Do</a
+        >
+        <a
+          href="/services"
+          class="font-normal text-gray-900 hover:text-blue-600"
+          >Our Work</a
+        >
+        <a
+          href="/features"
+          class="font-normal text-gray-900 hover:text-blue-600"
+          >Meet the Team</a
+        >
+        <a href="/contact" class="font-normal text-gray-900 hover:text-blue-600"
+          >Contact Us</a
+        >
+      </nav>
+    </a><a
+     href="https://calendly.com/plattrlabs/30min"
+    onclick="window.open(this.href, 'popupWindow', 'width=' + (window.innerWidth * 0.8) + ',height=' + (window.innerHeight * 0.8) + ',scrollbars=yes'); return false;"
+         class="hidden md:inline-flex gap-2 items-center justify-center h-[44px] w-[143px]  md:h-[48px] md:w-[162px] bg-[#2B4DFF] text-white font-medium rounded-full hover:bg-blue-700 transition-colors"
+    >
+      Book a Call
+      <div class="relative  flex flex-col justify-center items-center"> <div class="bg-white rounded-full w-6 h-6"></div>
+      <img
+        class="absolute "
+        src="./assets/images/Vector.svg"
+        alt=""
+        srcset=""
+      /></div>
+     </a>
+
+      <button class="md:hidden text-gray-900" id="mobile-menu-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    class="md:hidden hidden absolute w-full bg-white shadow-xl rounded-xl mt-3 text-sm"
+    id="mobile-menu"
+  >
+    <div
+      class="container-custom py-7 space-y-4 flex flex-col justify-center items-center"
+    >
+      <a href="/" class="block font-medium text-gray-900 hover:text-blue-600"
+        >What We Do</a
+      >
+      <a
+        href="/services"
+        class="block font-medium text-gray-900 hover:text-blue-600"
+        >Our Work</a
+      >
+      <a
+        href="/features"
+        class="block font-medium text-gray-900 hover:text-blue-600"
+        >Meet the Team</a
+      >
+      <a
+        href="/contact"
+        class="block font-medium text-gray-900 hover:text-blue-600"
+        >Contact Us</a
+      >
+
+      <div
+        href="/book-demo"
+        class="inline-flex relative items-center justify-center w-50 px-5 py-2.5 bg-[#2B4DFF] text-white font-medium rounded-full hover:bg-blue-700 transition-colors"
+      >
+        <p>Book a Call</p>
+        <div class="bg-white rounded-full w-6 h-6 ml-2"></div>
+        <img
+          class="absolute right-[26px]"
+          src="./assets/images/Vector.svg"
+          alt=""
+          srcset=""
+        />
+      </div>
+    </div>
+  </div>
+</header>
+
+  
+  <main>
+    
+<section class="container-custom ">
+ 
+  <div class=" h-full lg:h-[85vh] min-h-[657px] rounded-xl bg-[#F1F1FF]   flex flex-col items-center  justify-between ">
+  <div class="gap-16 items-center  lg:mt-[10vh]">
+      <div class="space-y-6">
+        <div class="relative text-2xl leading-9 mt-5  md:mt-2 md:px-50 lg:leading-[84px]   text-center md:text-5xl font-outfit lg:text-6xl font-bold">
+          <!-- First line -->
+          <div class="mb-2 flex flex-col md:flex-row items-center justify-center">
+            <span class="inline-block">Empowering</span>
+            <br class="block md:hidden"/>
+            <div class="inline-block text-[#878787] min-w-[350px] ml-2 ">
+              <div class="slide-container md:h-[100px]">
+                <ul class="v-slides">
+                  <li class="v-slide">Healthcare</li>
+                  <li class="v-slide">Education</li>
+                  <li class="v-slide">Logistics</li>
+                  <li class="v-slide">Manufacturing</li>
+                  <li class="v-slide">Finance</li>
+                  <li class="v-slide">Real Estate</li>
+                  <li class="v-slide">Hospitality</li>
+                  <li class="v-slide">E-Commerce</li>
+                  <li class="v-slide">Telecommunications</li>
+                  <li class="v-slide">Automotive</li>
+                  <li class="v-slide">Energy</li>
+                  <li class="v-slide">Media & Entertainment</li>
+                  <li class="v-slide">Travel & Tourism</li>
+                  <li class="v-slide">Agriculture</li>
+   
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Second line -->
+          <div class="flex flex-col md:flex-row items-center justify-center ">
+            <span class="inline-block">with</span>
+            <div class=" inline-block text-[#878787] min-w-[350px] ml-2 ">
+              <div class="slide-container2  min-w-[350px]  " >
+                <ul class="v2-slides min-w-[350px] ">
+                  <li class="v2-slide">Patient-Centric</li>
+                  <!-- <li class="v2-slide">Interactive</li>
+                  <li class="v2-slide">Efficient</li>
+                  <li class="v2-slide">Automated</li>
+                  <li class="v2-slide">Secure</li>
+                  <li class="v2-slide">Smart</li>
+                  <li class="v2-slide">Seamless</li>
+                  <li class="v2-slide">Scalable</li>
+                  <li class="v2-slide">Reliable</li>
+                  <li class="v2-slide">Innovative</li>
+                  <li class="v2-slide">Sustainable</li> -->
+                  <li class="v2-slide">Engaging</li>
+                  <li class="v2-slide">Connected</li>
+                  <li class="v2-slide">Smart Farming</li>
+                </ul>
+              </div>
+            </div>
+            <span class="inline-block">Software Solutions</span>
+          </div>
+        </div>
+        <p class="text-center text-lg md:text-2xl">with our AI-powered Solutions, we trasform challenges into opportunities.</p>
+        <div class="flex flex-col  md:flex-row items-center justify-center  gap-4 pt-2 md:pt-4">
+          <div class="flex justify-center h-[44px] w-[143px] items-center md:h-[48px] md:w-[162px] rounded-full border border-gray-300"><a
+            href="/services"
+            class="  text-gray-900    flex items-center gap-2 hover:bg-gray-50 transition-all"
+          >
+            Our Services
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a></div>
+          <a
+         href="https://calendly.com/plattrlabs/30min"
+    onclick="window.open(this.href, 'popupWindow', 'width=' + (window.innerWidth * 0.8) + ',height=' + (window.innerHeight * 0.8) + ',scrollbars=yes'); return false;"
+          class="inline-flex gap-2 items-center justify-center h-[44px] w-[143px]  md:h-[48px] md:w-[162px] bg-[#2B4DFF] text-white font-medium rounded-full hover:bg-blue-700 transition-colors"
+        >
+          Book a Call
+          <div class="relative  flex flex-col justify-center items-center"> <div class="bg-white rounded-full w-6 h-6"></div>
+          <img
+            class="absolute "
+            src="./assets/images/Vector.svg"
+            alt=""
+            srcset=""
+          /></div>
+         </a>
+        
+        </div>
+      </div>
+    </div>
+    <div class="w-full ">      
+     
+      <div class="flex justify-center md:justify-between   w-full">
+        <div class=" relative hidden bottom-0  w-[10vw] md:w-[14vw]  md:flex flex-col items-start justify-end">
+          <img src="./assets/images/Group11.svg" alt="hero" class=" bottom-0  " />
+        
+        </div>
+        <div class="relative md:w-[20%] md:mr-[5%]">
+        <img src="./assets/images/Open Folder.png" alt="hero" class="w-[70vw] md:w-full " />
+        <span class="absolute left-[18%] top-[24%] text-sm md:justify-end lg:text-lg">10+ Clients</span>
+        <img src="./assets/images/indian-railways3115 1.png" alt="hero" class="absolute top-[50%] left-[15%] md:w-[25%]" />
+        <p class="absolute font-afacad top-[60%] left-[40%] md:top-[56%] md:left-[45%] 2xl:left-[41%] 2xl:text-4xl  lg:left-[45%] text-3xl md:text-2xl text-bold">
+          <span class="text-[#16C878] ">wim</span>cart</p></div></div>
+        </div> </section>  
+    
+
+<script>
+  const vsOpts = {
+    slides: document.querySelectorAll('.v-slide'),
+    duration: 0.5,
+    delayBetweenSlides: 1.5
+  };
+
+  const vSlide = gsap.timeline({ repeat: -1 });
+
+  vsOpts.slides.forEach((slide, index) => {
+    const chars = new SplitText(slide, { type: "chars" }).chars;
+
+    // Hide all other slides
+    vSlide.set(vsOpts.slides, { visibility: "hidden", opacity: 0 });
+
+    // Show current slide only
+    vSlide.set(slide, { visibility: "visible", opacity: 1 });
+
+    // Animate its characters
+    vSlide.fromTo(
+      chars,
+      { y: 50, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        stagger: 0.05,
+        duration: vsOpts.duration,
+        ease: "power2.out"
+      }
+    );
+
+    // Pause before transitioning
+    vSlide.to(slide, {
+      opacity: 0,
+      duration: 0.3,
+      delay: vsOpts.delayBetweenSlides
+    });
+
+    // Optionally hide it after fade out
+    vSlide.set(slide, { visibility: "hidden" });
+  });
+
+  vSlide.play();
+  //second word
+function animateV2Slides() {  
+  const vsOpts = {
+    slides: document.querySelectorAll('.v2-slide'),
+    duration: 0.5,
+    delayBetweenSlides: 1.5
+  };
+
+  const vSlide = gsap.timeline({ repeat: -1 });
+
+  vsOpts.slides.forEach((slide, index) => {
+    const chars = new SplitText(slide, { type: "chars" }).chars;
+
+    // Hide all other slides
+    vSlide.set(vsOpts.slides, { visibility: "hidden", opacity: 0 });
+
+    // Show current slide only
+    vSlide.set(slide, { visibility: "visible", opacity: 1 });
+
+    // Animate its characters
+    vSlide.fromTo(
+      chars,
+      { y: 50, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        stagger: 0.05,
+        duration: vsOpts.duration,
+        ease: "power2.out"
+      }
+    );
+
+    // Pause before transitioning
+    vSlide.to(slide, {
+      opacity: 0,
+      duration: 0.3,
+      delay: vsOpts.delayBetweenSlides
+    });
+
+    // Optionally hide it after fade out
+    vSlide.set(slide, { visibility: "hidden" });
+  });
+
+  vSlide.play();
+}
+
+animateV2Slides();
+
+    </script>
+    
+<section class="mt-12 bg-white">
+  <div class="container-custom">
+    <div class="text-center mx-auto">
+      <p
+        class="text-xl md:text-start md:text-4xl md:w-[40vw] md:leading-[4vw] 2xl:text-[50px] font-bold leading-[200%] text-[#252525] font-outfit"
+      >
+        The Health of Your Business Is Too Important to Neglect
+      </p>
+    </div>
+    <div class="mt-7">
+      <div class="md:flex gap-4 md:gap-4 md:h-full">
+        <div
+          class="md:w-[40%] border border-[#E4E4E4] rounded-2xl flex flex-col items-center justify-between"
+        >
+          <p
+            class="py-12 md:py-10 text-center text-sm px-4 md:text-lg 2xl:px-14 2xl:text-xl"
+          >
+            Lorem ipsum dolor sit amet consectetur. Iaculis non praesent tempor
+            faucibus pellentesque a. In augue at morbi pellentesque aenean
+            aliquam egestas egestas eleifend.
+          </p>
+          <img
+            src="./assets/images/Asset 1@4x 7.png"
+            alt="hero"
+            class="w-[50vw] md:w-[70%]"
+          />
+        </div>
+        <div class="md:flex gap-4">
+          <div
+            class="mt-4 md:mt-0 md:gap-3 md:flex md:flex-col md:justify-between"
+          >
+            <div
+              class="bg-[#F2F1FF] rounded-2xl md:min-h-[238px] md:h-[48%] md:flex md:flex-col 2xl:gap-16 items-start"
+            >
+              <div
+                class="py-5 px-5 md:px-8 md:py-10 md:flex md:flex-col md:justify-between md:h-full 2xl:gap-5"
+              >
+                <img
+                  src="./assets/images/Group111.svg"
+                  alt="hero"
+                  class="2xl:w-10 w-[10%]"
+                />
+                <p class="py-3 text-[20px] 2xl:text-2xl">
+                  Inefficient Processes
+                </p>
+                <p class="text-sm 2xl:text-xl">
+                  Manual, time-consuming tasks are holding your business back.
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-[#FFF5F1] mt-4 md:mt-0 rounded-2xl md:min-h-[238px] md:h-[48%] md:flex md:flex-col 2xl:gap-16 items-start"
+            >
+              <div
+                class="py-5 px-5 md:px-8 md:py-10 md:flex md:flex-col md:justify-between md:h-full 2xl:gap-5"
+              >
+                <img
+                  src="./assets/images/Group112.svg"
+                  alt="hero"
+                  class="2xl:w-10 w-[10%]"
+                />
+                <p class="py-3 text-[20px] 2xl:text-2xl">
+                  Lack of Real-Time Data
+                </p>
+                <p class="text-sm 2xl:text-xl">
+                  Without actionable insights, you're making decisions in the
+                  dark.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt-4 md:mt-0 md:gap-3 md:flex md:flex-col md:justify-between"
+          >
+            <div
+              class="bg-[#FFF0F2] rounded-2xl md:min-h-[238px] md:h-[48%] md:flex md:flex-col 2xl:gap-16 items-start"
+            >
+              <div
+                class="py-5 px-5 md:px-8 md:py-10 md:flex md:flex-col md:justify-between md:h-full 2xl:gap-5"
+              >
+                <img
+                  src="./assets/images/Group113.svg"
+                  alt="hero"
+                  class="2xl:w-10 w-[10%]"
+                />
+                <p class="py-3 text-[20px] 2xl:text-2xl">
+                  Difficulty in Scaling Operations
+                </p>
+                <p class="text-sm 2xl:text-xl">
+                  Scaling your business shouldn't mean breaking your systems.
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-[#F1F4FF] mt-4 md:mt-0 rounded-2xl md:min-h-[238px] md:h-[48%] md:flex md:flex-col 2xl:gap-16 items-start"
+            >
+              <div
+                class="py-5 px-5 md:px-8 md:py-10 md:flex md:flex-col md:justify-between md:h-full 2xl:gap-5"
+              >
+                <img
+                  src="./assets/images/Group 114.svg"
+                  alt="hero"
+                  class="2xl:w-10 w-[10%]"
+                />
+                <p class="py-3 text-[20px] 2xl:text-2xl">
+                  Poor Customer Experiences
+                </p>
+                <p class="text-sm 2xl:text-xl">
+                  Unhappy customers mean lost revenue and missed opportunities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial mt-[60px] md:mt-[120px]">
+  <div class="container-custom">
+    <div
+      class="testimonial-content rounded-xl bg-[#F1F1FF] px-4 py-2 md:pl-10 md:py-5"
+    >
+      <p
+        class="pt-8 text-xl font-semibold font-outfit leading-10 md:text-4xl md:w-[50%] md:leading-[50px]"
+      >
+        Transform Your Business <br />with Tailored Software Solutions
+      </p>
+      <p class="py-2 text-[16px] leading-6 md:py-5 md:text-lg">
+        We Help You Overcome Challenges and Achieve Growth
+      </p>
+      <p
+        class="py-2 text-[14px] leading-6 md:pr-32 md:text-[16px] md:leading-8"
+      >
+        At PlattrTechStudio, we combine cutting-edge AI technology with custom
+        software solutions to address your most pressing business challenges.
+        Whether you're struggling with inefficient workflows, a lack of
+        real-time insights, or the inability to scale, our AI-powered tools are
+        designed to streamline your operations and drive growth. From automating
+        repetitive tasks and providing predictive analytics to personalizing
+        customer experiences and optimizing resource allocation, we empower your
+        business to thrive in a competitive landscape. Let us help you build
+        intelligent, future-ready systems that deliver efficiency,
+        profitability, and innovation.
+      </p>
+      <div class="py-8">
+        <a
+          href="https://calendly.com/plattrlabs/30min"
+          onclick="window.open(this.href, 'popupWindow', 'width=' + (window.innerWidth * 0.8) + ',height=' + (window.innerHeight * 0.8) + ',scrollbars=yes'); return false;"
+          class="inline-flex gap-2 items-center justify-center h-[44px] w-[143px] md:h-[48px] md:w-[162px] bg-[#2B4DFF] text-white font-medium rounded-full hover:bg-blue-700 transition-colors"
+        >
+          Book a Call
+          <div class="relative flex flex-col justify-center items-center">
+            <div class="bg-white rounded-full w-6 h-6"></div>
+            <img
+              class="absolute"
+              src="./assets/images/Vector.svg"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="WhatWeDo">
+  <div class="container-custom">
+    <h1 class="text-center text-2xl font-semibold py-14 md:text-3xl">
+      What We Do
+    </h1>
+    <div class="flex flex-col gap-5 md:flex-row">
+      <div class="first container-custom md:w-[70%] bg-[#FFF1F6] rounded-xl">
+        <div class="md:flex">
+          <div class="flex flex-col pl-3 pt-7 md:w-[60%]">
+            <p class="text-lg font-medium md:text-2xl">Web Development</p>
+            <p class="text-sm py-5 md:text-lg">
+              Manual, time-consuming tasks are holding your business back.
+            </p>
+
+            <div class="flex gap-2">
+              <p class="text-[#FF518F] md:text-lg cursor-pointer">View More</p>
+              <img src="./assets/images/Vector2.svg" alt="" />
+            </div>
+          </div>
+          <div class="flex justify-end pt-12 md:pt-24">
+            <img class="" src="./assets/images/Asset 2@4x 8.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="second container-custom bg-[#F8EFFF] rounded-xl">
+        <div class="md:flex">
+          <div class="flex flex-col pl-3 pt-7 md:w-[60%]">
+            <p class="text-lg font-medium md:text-2xl">Mobile Development</p>
+            <p class="text-sm py-5 md:text-lg">
+              Manual, time-consuming tasks are holding your business back.
+            </p>
+
+            <div class="flex gap-2">
+              <p class="text-[#AE47FF] md:text-lg cursor-pointer">View More</p>
+              <img src="./assets/images/Vector3.svg" alt="" />
+            </div>
+          </div>
+          <div class="flex justify-end pt-12 md:pt-24">
+            <img class="" src="./assets/images/Asset 3@4x 8.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col gap-5 md:flex-row mt-5">
+      <div class="third container-custom bg-[#EFFFF7] rounded-xl">
+        <div class="md:flex">
+          <div class="flex flex-col pl-3 pt-7 md:w-[60%]">
+            <p class="text-lg font-medium md:text-2xl">AI/ML as service</p>
+            <p class="text-sm py-5 md:text-lg md:pr-2">
+              Manual, time-consuming tasks are holding your business back.
+            </p>
+
+            <div class="flex gap-2">
+              <p class="text-[#1FC974] md:text-lg cursor-pointer">View More</p>
+              <img src="./assets/images/Vector4.svg" alt="" />
+            </div>
+          </div>
+          <div class="flex justify-end h-full pt-12 md:pt-[68px]">
+            <img class="" src="./assets/images/Asset 3@4x 3.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="fourth container-custom md:w-[70%] bg-[#FFF1F6] rounded-xl">
+        <div class="md:flex">
+          <div class="flex flex-col pl-3 pt-7 md:w-[60%]">
+            <p class="text-lg font-medium md:text-2xl">DevOps as Service</p>
+            <p class="text-sm py-5 md:text-lg">
+              Manual, time-consuming tasks are holding your business back.
+            </p>
+            <div class="flex gap-2">
+              <p class="text-[#DDB400] md:text-lg cursor-pointer">View More</p>
+              <img src="./assets/images/Vector5.svg" alt="" />
+            </div>
+          </div>
+          <div class="flex justify-end pt-12 md:pt-24">
+            <img class="" src="./assets/images/Asset 4@4x 8.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pt-16 relative">
+  <div class="bg-[#252525] pb-[350px] md:pb-[250px]">
+    <div class="container-custom">
+      <h1
+        class="text-center text-white text-xl font-semibold py-14 md:text-3xl"
+      >
+        Why work with us
+      </h1>
+      <div>
+        <div class="md:flex gap-5 md:justify-center">
+          <div
+            class="first border-[#04E37B] relative border-t border-x rounded-xl h-[350px] md:w-[424px] px-5 pt-5 z-10"
+          >
+            <img src="./assets/images/Frame 236.png" alt="" />
+            <p class="text-white pr-[20%] text-lg leading-8 py-6">
+              Smarter Decisions with AI-Driven Insights
+            </p>
+            <p class="text-white absolute z-40 text-sm leading-7 pb-8 pr-8">
+              Our AI-powered analytics tools provide real-time, actionable
+              insights, helping you make data-driven decisions that boost
+              efficiency and profitability.
+            </p>
+            <div
+              class="bg-gradient-to-t z-10 from-[#252525]/100 to-transparent absolute w-[105%] h-32 -left-2 bottom-0"
+            ></div>
+          </div>
+          <div
+            class="first border-[#2B4DFF] relative border-t border-x rounded-xl h-[350px] md:w-[424px] px-5 pt-5 z-10"
+          >
+            <img src="./assets/images/Frame 240.png" alt="" />
+            <p class="text-white pr-[20%] text-lg leading-8 py-6">
+              Effortless Scalability for Growing Businesses
+            </p>
+            <p class="text-white absolute z-40 text-sm leading-7 pb-8 pr-8">
+              With scalable software solutions, your business can grow
+              seamlessly without worrying about outgrowing your systems.
+            </p>
+            <div
+              class="bg-gradient-to-t z-10 from-[#252525]/100 to-transparent absolute w-[105%] h-32 -left-2 bottom-0"
+            ></div>
+          </div>
+          <div
+            class="third border-[#FF493A] relative border-t border-x rounded-xl h-[350px] md:w-[424px] px-5 pt-5 z-10"
+          >
+            <img src="./assets/images/Frame 244.png" alt="" />
+            <p class="text-white pr-[20%] text-lg leading-8 py-6">
+              Enhanced Customer Experiences That Drive Loyalty
+            </p>
+            <p class="text-white absolute z-40 text-sm leading-7 pb-8 pr-8">
+              Leverage AI-driven personalization to create exceptional customer
+              experiences that keep your clients coming back for more.
+            </p>
+            <div
+              class="bg-gradient-to-t z-10 from-[#252525]/100 to-transparent absolute w-[105%] h-32 -left-2 bottom-0"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="md:w-[100vw] flex justify-center">
+    <div class="container-custom absolute -bottom-[250px]">
+      <div
+        class="bg-white md:flex justify-between rounded-3xl p-8 md:w-[80vw] md:max-w-[1100px] md:px-20 md:pt-4 md:pb-12 shadow-xl max-w-2xl mx-auto"
+      >
+        <div class="md:flex md:px-32 md:flex-col md:justify-center">
+          <h2 class="text-2xl md:text-3xl font-semibold mb-2">How It Works</h2>
+          <p class="text-gray-600 mb-8">
+            Simple, Transparent, and Results-Driven
+          </p>
+
+          <div class="">
+            <a
+              href="https://calendly.com/plattrlabs/30min"
+              onclick="window.open(this.href, 'popupWindow', 'width=' + (window.innerWidth * 0.8) + ',height=' + (window.innerHeight * 0.8) + ',scrollbars=yes'); return false;"
+              class="inline-flex gap-2 items-center justify-center h-[44px] w-[143px] md:h-[48px] md:w-[162px] bg-[#2B4DFF] text-white font-medium rounded-full hover:bg-blue-700 transition-colors"
+            >
+              Book a Call
+              <div class="relative flex flex-col justify-center items-center">
+                <div class="bg-white rounded-full w-6 h-6"></div>
+                <img
+                  class="absolute"
+                  src="./assets/images/Vector.svg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="space-y-6 relative">
+          <!-- Vertical Line -->
+
+          <img
+            src="./assets/images/Line 10.svg"
+            class="absolute md:left-8 left-6 top-12 bottom-6 w-px z-1 h-[80%]"
+            alt=""
+          />
+
+          <!-- Step 1 -->
+          <div class="flex items-start space-x-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 flex items-center justify-center"
+            >
+              <img
+                src="./assets/images/Frame 197.png"
+                alt="Book a Free Consultation"
+                class="z-20"
+              />
+            </div>
+            <div>
+              <h3 class="font-medium md:text-lg text-sm mb-1">Step 1</h3>
+              <p class="text-gray-600 md:text-lg text-sm">
+                Book a Free Consultation
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="flex items-start space-x-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 flex items-center justify-center"
+            >
+              <img
+                src="./assets/images/Frame 199.png"
+                alt="We Craft a Tailored Solution"
+                ,
+                class="z-20"
+              />
+            </div>
+            <div>
+              <h3 class="font-medium md:text-lg text-sm mb-1">Step 2</h3>
+              <p class="text-gray-600 md:text-lg text-sm">
+                We Craft a Tailored Solution
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="flex items-start space-x-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 flex items-center justify-center"
+            >
+              <img
+                src="./assets/images/Frame 201.png"
+                alt="Development and Implementation"
+                ,
+                class="z-20"
+              />
+            </div>
+            <div>
+              <h3 class="font-medium md:text-lg text-sm mb-1">Step 3</h3>
+              <p class="text-gray-600 md:text-lg text-sm">
+                Development and Implementation
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="flex items-start space-x-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 flex items-center justify-center"
+            >
+              <img
+                src="./assets/images/Frame 203.png"
+                alt="Happily Ever After"
+                ,
+                class="z-20"
+              />
+            </div>
+            <div>
+              <h3 class="font-medium md:text-lg text-sm mb-1">Step 4</h3>
+              <p class="text-gray-600 md:text-lg text-sm">Happily Ever After</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#F1F1FF] pt-[290px] pb-[60px]"><div>
+    <div class="container-custom">
+        <div class="text-center mx-auto">
+       <div><p class="text-2xl my-[16px]">What Our Customers Say</p>
+    <p class="text-[16px] mb-[40px]">Hear From Businesses We`ve Empowered</p></div>  
+    <div>
+        <div class="flex justify-center   rounded-3xl gap-[20px]  card-container">
+            <div class="bg-white rounded-3xl min-w-[311px] max-w-[311px] min-h-[311px] h-full  py-[40px] px-[20px] flex flex-col gap-[30px] ">
+              <img src="./assets/images/Group 31.svg" alt="hero" class="w-[40px] h-[40px]"/>
+                  <p class="text-start font-[400]">With BMS, maintenance activities are now easier to manage, and the automated escalations ensure we never miss a critical update. Outstanding solution for railways!</p>  
+                    <div  class="flex">
+                       <img src="./assets/images/Mask group.png" alt="hero" class=""/>
+            <div>
+                <p class="text-start">Sri Murali Krishnan, CSE</p>
+                <img src="./assets/images/image.png" alt="hero" class=""/>
+    
+            </div>
+                    </div>
+            </div>
+            <div class="bg-white min-w-[311px] max-w-[311px] min-h-[311px] h-full rounded-3xl py-[40px] px-[20px] flex flex-col gap-[30px] ">
+                <img src="./assets/images/Group 31.svg" alt="hero" class="w-[40px] h-[40px]"/>
+                    <p class="text-start font-[400]">The Block Management System has completely transformed how we manage maintenance and approvals. The real-time notifications and seamless workflow have significantly reduced delays and improved efficiency.</p>  
+                      <div  class="flex">
+                         <img src="./assets/images/Mask group.png" alt="hero" class=""/>
+              <div>
+                  <p class="text-start">Sri Ramprasad, Senior DSTE</p>
+                  <img src="./assets/images/image.png" alt="hero" class=""/>
+      
+              </div>
+                      </div>
+              </div>  
+               <div class="bg-white min-w-[311px] max-w-[311px] min-h-[311px] h-full rounded-3xl py-[40px] px-[20px] flex flex-col gap-[30px] ">
+                <img src="./assets/images/Group 31.svg" alt="hero" class="w-[40px] h-[40px]"/>
+                    <p class="text-start font-[400]">This system ensures no request is overlooked, and the detailed audit trails are a game-changer for compliance. A must-have for any division!</p>  
+                      <div  class="flex">
+                         <img src="./assets/images/Mask group.png" alt="hero" class=""/>
+              <div>
+                  <p class="text-start">Sri Gopala Krishnan, SSE</p>
+                  <img src="./assets/images/image.png" alt="hero" class=""/>
+      
+              </div>
+                      </div>
+              </div>  
+        </div>
+    </div>
+</div></section>
+<style>
+    .card-container {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+   
+        display: flex;
+
+     
+        scroll-padding-left: 10px;
+      
+    }
+    .card-container::-webkit-scrollbar {
+        display: none;
+    }
+ 
+    @media (max-width: 768px) {
+        .card-container {
+            padding-left: 20px;
+            padding-right: 20px;
+            justify-content: flex-start;
+        }
+    }
+</style><script>
+    function isMobileScreen() {
+        return window.innerWidth <= 768; // Mobile breakpoint
+    }
+
+    const cardContainer = document.querySelector('.card-container');
+    
+    cardContainer.addEventListener('wheel', function(event) {
+        if (isMobileScreen()) {
+            event.preventDefault();
+            this.scrollLeft += event.deltaY;
+        }
+    });
+
+    // Update on window resize
+    window.addEventListener('resize', function() {
+        if (!isMobileScreen()) {
+            cardContainer.scrollLeft = 0; // Reset scroll position when switching to desktop
+        }
+    });
+</script>
+<section class="">
+  <div class="container-custom md:flex md:justify-between">
+    <div
+      class="mt-[60px] md:w-[45%] md:flex md:flex-col md:justify-start md:ml-20"
+    >
+      <div>
+        <h1
+          class="text-2xl font-bold leading-[42px] md:text-[48px] md:leading-[72px]"
+        >
+          Frequently Asked Questions
+        </h1>
+        <p class="pt-[16px] md:text-[20px]">
+          Have questions? We are here to help
+        </p>
+      </div>
+    </div>
+    <div class="md:w-[55%] md:pt-[30px] md:mr-20">
+      <div class="pt-[36px] font-[400] faq-item">
+        <div class="flex justify-between md:text-[26px]">
+          <p>1. Are your software solutions affordable?</p>
+          <div class="icon-container">
+            <img
+              src="./assets/images/Mask group2.png"
+              alt="plusicon"
+              class="plus-icon cursor-pointer"
+            />
+            <img
+              src="./assets/images/Mask group1.png"
+              alt="minusicon"
+              class="minus-icon cursor-pointer"
+            />
+          </div>
+        </div>
+
+        <p class="pt-[16px] faq-answer hidden leading-[26px] md:text-[16px]">
+          Yes, we offer affordable and customized pricing to fit your budget
+          without compromising on quality. The cost of our software solutions
+          depends on the scope, complexity, and specific requirements of your
+          project. During our free consultation, we'll provide a detailed
+          estimate tailored to your needs, ensuring you get the best value for
+          your investment.
+        </p>
+      </div>
+      <div class="pt-[36px] font-[400] faq-item">
+        <div class="flex justify-between md:text-[26px]">
+          <p>2. What is your development process?</p>
+          <div class="icon-container">
+            <img
+              src="./assets/images/Mask group2.png"
+              alt="plusicon"
+              class="plus-icon cursor-pointer"
+            />
+            <img
+              src="./assets/images/Mask group1.png"
+              alt="minusicon"
+              class="minus-icon cursor-pointer"
+            />
+          </div>
+        </div>
+
+        <p class="pt-[16px] faq-answer hidden leading-[26px] md:text-[16px]">
+          The duration of a project depends on its complexity and scope. On
+          average, most projects take 4-12 weeks from initial consultation to
+          final implementation. We prioritize delivering high-quality solutions
+          on time, and we’ll provide a clear timeline during the planning phase.
+        </p>
+      </div>
+      <div class="pt-[36px] font-[400] faq-item">
+        <div class="flex justify-between md:text-[26px]">
+          <p>3. Do you provide ongoing support?</p>
+          <div class="icon-container">
+            <img
+              src="./assets/images/Mask group2.png"
+              alt="plusicon"
+              class="plus-icon cursor-pointer"
+            />
+            <img
+              src="./assets/images/Mask group1.png"
+              alt="minusicon"
+              class="minus-icon cursor-pointer"
+            />
+          </div>
+        </div>
+
+        <p class="pt-[16px] faq-answer hidden leading-[26px] md:text-[16px]">
+          Yes, we offer comprehensive post-launch support to ensure your
+          software continues to perform optimally. Our support packages include
+          regular updates, troubleshooting, and optimization to keep your
+          systems running smoothly.
+        </p>
+      </div>
+      <div class="pt-[36px] font-[400] faq-item">
+        <div class="flex justify-between md:text-[26px]">
+          <p>4. What technologies do you use in your solutions?</p>
+          <div class="icon-container">
+            <img
+              src="./assets/images/Mask group2.png"
+              alt="plusicon"
+              class="plus-icon cursor-pointer"
+            />
+            <img
+              src="./assets/images/Mask group1.png"
+              alt="minusicon"
+              class="minus-icon cursor-pointer"
+            />
+          </div>
+        </div>
+
+        <p class="pt-[16px] faq-answer hidden leading-[26px] md:text-[16px]">
+          We leverage cutting-edge technologies, including AI, machine learning,
+          cloud computing, and advanced analytics, to build robust and scalable
+          solutions. Our team stays updated with the latest industry trends to
+          ensure your business benefits from the most innovative tools
+          available.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container-custom">
+    <div class="mb-[60px] mx-[10px]">
+      <div class="bg-[#F1F1FF] rounded-2xl mt-[60px]">
+        <div class="flex flex-col items-center justify-center">
+          <p class="mt-[47px] text-[18px]">Still have questions?</p>
+          <p class="mt-[26px] leading-[32px] mx-[20px] text-[18px]">
+            Can’t find the answer you are looking for? Please chat to
+            <span class="text-[#FF493A]">our friendly team.</span>
+          </p>
+
+          <a
+            href="https://calendly.com/plattrlabs/30min"
+            onclick="window.open(this.href, 'popupWindow', 'width=' + (window.innerWidth * 0.8) + ',height=' + (window.innerHeight * 0.8) + ',scrollbars=yes'); return false;"
+            class="inline-flex mt-[37px] mb-[60px] gap-2 items-center justify-center h-[44px] w-[148px] md:h-[48px] md:w-[166px] bg-[#2B4DFF] text-white font-medium rounded-full hover:bg-blue-700 transition-colors"
+          >
+            Get in Touch
+            <div class="relative flex flex-col justify-center items-center">
+              <div class="bg-white rounded-full w-6 h-6"></div>
+              <img
+                class="absolute"
+                src="./assets/images/Vector.svg"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-toggle {
+    transition: transform 0.3s ease;
+  }
+
+  .faq-toggle.active {
+    transform: rotate(180deg);
+  }
+
+  .faq-answer {
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  .faq-answer.show {
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  .plus-icon {
+    display: block;
+  }
+
+  .minus-icon {
+    display: none;
+  }
+
+  .faq-item.active .plus-icon {
+    display: none;
+  }
+
+  .faq-item.active .minus-icon {
+    display: block;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach((item) => {
+      const iconContainer = item.querySelector(".icon-container");
+      const answer = item.querySelector(".faq-answer");
+
+      iconContainer.addEventListener("click", function () {
+        // Toggle the active class on the FAQ item
+        item.classList.toggle("active");
+
+        // Toggle the show class on the answer
+        answer.classList.toggle("show");
+
+        // Toggle the hidden class
+        answer.classList.toggle("hidden");
+      });
+    });
+  });
+</script>
+
+
+
+
+
+
+
+  </main>
+  
+  <footer class="bg-gray-900 text-white pt-16">
+  <div class="container-custom">
+    <div
+      class="grid grid-cols-2 md:grid-cols-5 gap-8 md:flex md:justify-between mr-[5%]"
+    >
+      <!-- Company Info -->
+
+      <div class="col-span-2 md:col-span-1 w-[258px]">
+        <a
+          href="/"
+          class="flex items-center justify-between mb-[30px] h-[55px]"
+        >
+          <img src="./assets/images/Group 34686.svg " alt="" srcset="" />
+          <p class="text-[24px] font-bold text-white">Plattr Tech Studio</p>
+        </a>
+        <p class="text-gray-400 text-sm mb-[30px] pr-10">
+          Lorem ipsum dolor sit amet consectetur. Iaculis non praesent tempor
+          faucibus pellentesque a. In augue at morbi pellentesque aenean aliquam
+          egestas egestas eleifend.
+        </p>
+        <div class="flex gap-[24px] h-[25px] w-[25px]">
+          <img src="./assets/images/linkedin (1).png" alt="" srcset="" />
+          <img src="./assets/images/twitter (1).png" alt="" srcset="" />
+          <img src="./assets/images/facebook (1).png" alt="" srcset="" />
+          <img src="./assets/images/instagram (1).png" alt="" srcset="" />
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+
+      <div class="col-span-1">
+        <h3 class="text-lg font-medium mb-6">What We Do</h3>
+        <ul class="space-y-4">
+          <li>
+            <a href="/" class="text-gray-400 hover:text-white"
+              >Web Development</a
+            >
+          </li>
+          <li>
+            <a href="/services" class="text-gray-400 hover:text-white"
+              >Mobile App Development</a
+            >
+          </li>
+          <li>
+            <a href="/about" class="text-gray-400 hover:text-white">
+              AI/ML Development
+            </a>
+          </li>
+          <li>
+            <a href="/contact" class="text-gray-400 hover:text-white">
+              DevOps as a Service
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="col-span-1">
+        <h3 class="text-lg font-medium mb-6">Why us?</h3>
+        <ul class="space-y-4">
+          <li>
+            <a href="#" class="text-gray-400 hover:text-white">
+              Why Choose PTS
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-span-1">
+        <h3 class="text-lg font-medium mb-6">Company</h3>
+        <ul class="space-y-4">
+          <li>
+            <a href="#" class="text-gray-400 hover:text-white">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-400 hover:text-white">Career</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-span-1">
+        <h3 class="text-lg font-medium mb-6">Information</h3>
+        <ul class="space-y-4">
+          <li>
+            <a
+              href="/services/web-development"
+              class="text-gray-400 hover:text-white"
+              >Terms & Conditions</a
+            >
+          </li>
+          <li>
+            <a
+              href="/services/mobile-app"
+              class="text-gray-400 hover:text-white"
+              >Privacy</a
+            >
+          </li>
+          <li>
+            <a href="/services/ui-ux" class="text-gray-400 hover:text-white"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="-t -gray-800 mt-12 py-[16px] text-center">
+      <p class="text-gray-400 text-sm">
+        C.2025.Plattr Tech Studio. All Rights Reserved
+      </p>
+    </div>
+  </div>
+</footer>
+
+  
+  <script src="/assets/js/main.js"></script>
+</body>
+</html> 

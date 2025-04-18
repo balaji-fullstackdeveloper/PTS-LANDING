@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.2/dist/gsap.min.js"></script>
+
+  <!-- SplitText -->
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class=" font-outfit text-gray-800">
+  
+  {% include "partials/header.html" %}
+  
+  <main>
+    {{ content | safe }}
+  </main>
+  
+  {% include "partials/footer.html" %}
+  
+  <script src="/assets/js/main.js"></script>
+</body>
+</html> 
