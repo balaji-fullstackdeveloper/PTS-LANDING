@@ -655,6 +655,11 @@ video {
   margin-right: 10px;
 }
 
+.mx-\[16px\] {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
 .mx-\[20px\] {
   margin-left: 20px;
   margin-right: 20px;
@@ -756,6 +761,14 @@ video {
 
 .mt-\[60px\] {
   margin-top: 60px;
+}
+
+.mb-\[16px\] {
+  margin-bottom: 16px;
+}
+
+.mb-\[12px\] {
+  margin-bottom: 12px;
 }
 
 .block {
@@ -1114,6 +1127,14 @@ video {
   gap: 90px;
 }
 
+.gap-\[11px\] {
+  gap: 11px;
+}
+
+.gap-\[16px\] {
+  gap: 16px;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1138,6 +1159,10 @@ video {
 
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+
+.rounded-\[20px\] {
+  border-radius: 20px;
 }
 
 .rounded-full {
@@ -1241,6 +1266,16 @@ video {
   background-color: rgb(255 245 241 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#FFFDEC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 253 236 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#FFFFFF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
@@ -1334,6 +1369,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-\[12px\] {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 .py-\[16px\] {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -1407,6 +1447,10 @@ video {
 
 .pt-\[16px\] {
   padding-top: 16px;
+}
+
+.pt-\[24px\] {
+  padding-top: 24px;
 }
 
 .pt-\[290px\] {
@@ -1503,6 +1547,10 @@ video {
   font-weight: 600;
 }
 
+.font-\[500\] {
+  font-weight: 500;
+}
+
 .leading-10 {
   line-height: 2.5rem;
 }
@@ -1531,6 +1579,10 @@ video {
   line-height: 26px;
 }
 
+.leading-\[30px\] {
+  line-height: 30px;
+}
+
 .leading-\[32px\] {
   line-height: 32px;
 }
@@ -1539,12 +1591,12 @@ video {
   line-height: 42px;
 }
 
-.leading-\[74px\] {
-  line-height: 74px;
+.leading-\[48px\] {
+  line-height: 48px;
 }
 
-.leading-\[30px\] {
-  line-height: 30px;
+.leading-\[74px\] {
+  line-height: 74px;
 }
 
 .text-\[\#16C878\] {
@@ -1972,15 +2024,6 @@ ul.v2-slides {
 
   .md\:gap-4 {
     gap: 1rem;
-  }
-
-  .md\:border-2 {
-    border-width: 2px;
-  }
-
-  .md\:border-red-500 {
-    --tw-border-opacity: 1;
-    border-color: rgb(239 68 68 / var(--tw-border-opacity, 1));
   }
 
   .md\:px-20 {
