@@ -5,39 +5,91 @@
                 <p class="text-[24px] font-medium leading-[48px]">Full-Stack  </br class="md:hidden"> Web Development</p>
                 <p class="text-[14px] font-[400] leading-[26px] mt-[16px]">We offer end-to-end full-stack development
                     using modern JavaScript technologies and
-                    server-side  frameworks to create powerful
+                    server-side frameworks to create powerful
                     web applications.</p>
             </div>
-            <div class="mx-[16px] mt-[40px] bg-[#FFFFFF] rounded-[20px]">
-                <div class="mx-[16px]">    
-                    <p class="pt-[24px]  leading-[30px] font-[500]  text-[16px]">MERN Stack Development (MongoDB,
-                    Express.js, React, Node.js)</p>
-                <p class="font-[400]  text-[14px] mt-[16px] mb-[12px]">We offer end-to-end full-stack development
-                    using modern JavaScript technologies and
-                    server-side  frameworks to create powerful
-                    web applications.</p></div>
-                    <div class="mx-[16px] ">
-                        <p class="text-[16px] font-medium leading-[30px] py-[12px]">Why MERN ?</p>
-                        <div class="mb-[16px] flex flex-col gap-[24px]">
-                            <div class="flex gap-[11px]">
-                                <img src="../assets/images/service/Vector6.svg" alt="">
-                              <p class="text-[14px] font-[400] ">Ideal for single-page applications and
-                                real-time apps</p>
+
+            <div class="mx-[16px] mt-[40px]">
+                <div style="scrollbar-width: none;" class="cards-container overflow-x-auto snap-x snap-mandatory ">
+                    <div class="flex gap-4 min-w-max">
+                        <div class="card snap-start w-[300px] flex-shrink-0">        
+                            <div class="bg-[#FFFFFF] rounded-[20px] p-4">
+                                <div class="mx-[16px]">    
+                                    <p class="pt-[24px] leading-[30px] font-[500] text-[16px]">MERN Stack Development (MongoDB,
+                                    Express.js, React, Node.js)</p>
+                                    <p class="font-[400] text-[14px] mt-[16px] mb-[12px]">We offer end-to-end full-stack development
+                                        using modern JavaScript technologies and
+                                        server-side frameworks to create powerful
+                                        web applications.</p>
+                                </div>
+                                <div class="mx-[16px]">
+                                    <p class="text-[16px] font-medium leading-[30px] py-[12px]">Why MERN ?</p>
+                                    <div class="mb-[16px] flex flex-col gap-[24px]">
+                                        <div class="flex gap-[11px]">
+                                            <img src="../assets/images/service/Vector6.svg" alt="">
+                                            <p class="text-[14px] font-[400]">Ideal for single-page applications and
+                                                real-time apps</p>
+                                        </div>
+                                        <div class="flex gap-[11px]">
+                                            <img src="../assets/images/service/Vector6.svg" alt="">
+                                            <p>JavaScript across the entire stack</p>
+                                        </div>
+                                        <div class="flex gap-[11px]">
+                                            <img src="../assets/images/service/Vector6.svg" alt="">
+                                            <p>Scalable and flexible for both MVPs
+                                                and enterprise apps</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flex gap-[11px]">
-                                <img src="../assets/images/service/Vector6.svg" alt="">
-                              <p>JavaScript across the entire stack</p>
-                            </div>     <div class="flex gap-[11px]">
-                                <img src="../assets/images/service/Vector6.svg" alt="">
-                              <p>Scalable and flexible for both MVPs
-                                and enterprise apps</p>
+                        </div>
+                        
+                        <div class="card snap-start w-[300px] flex-shrink-0">        
+                            <div class="bg-[#FFFFFF] rounded-[20px] p-4">
+                                <div class="mx-[16px]">    
+                                    <p class="pt-[24px] leading-[30px] font-[500] text-[16px]">MEAN Stack Development (MongoDB,
+                                    Express.js, Angular, Node.js)</p>
+                                    <p class="font-[400] text-[14px] mt-[16px] mb-[12px]">We offer end-to-end full-stack development
+                                        using modern JavaScript technologies and
+                                        server-side frameworks to create powerful
+                                        web applications.</p>
+                                </div>
+                                <div class="mx-[16px]">
+                                    <p class="text-[16px] font-medium leading-[30px] py-[12px]">Why MEAN ?</p>
+                                    <div class="mb-[16px] flex flex-col gap-[24px]">
+                                        <div class="flex gap-[11px]">
+                                            <img src="../assets/images/service/Vector6.svg" alt="">
+                                            <p class="text-[14px] font-[400]">Perfect for enterprise-level applications</p>
+                                        </div>
+                                        <div class="flex gap-[11px]">
+                                            <img src="../assets/images/service/Vector6.svg" alt="">
+                                            <p>TypeScript support for better type safety</p>
+                                        </div>
+                                        <div class="flex gap-[11px]">
+                                            <img src="../assets/images/service/Vector6.svg" alt="">
+                                            <p>Built-in testing and documentation tools</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-            
+                </div>
+                
+                <!-- Toggle Switch -->
+                <div class="flex justify-center items-center gap-4 mt-4">
+                    
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" class="sr-only peer" id="card-toggle">
+                        <div class="w-[51px] h-[11px] bg-gray-200 peer-focus:outline-none   rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-blue-500 after:border-gray-300 after:border after:rounded-[6px] after:h-[8px] after:w-[23px] after:transition-all peer-checked:bg-gray-200"></div>
+                    </label>
+                  
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 
+    <script src="../assets/js/cards-toggle.js"></script>
+    <script src="../assets/js/cards-pagination.js"></script>
