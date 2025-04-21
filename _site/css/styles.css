@@ -837,12 +837,12 @@ video {
   margin-top: 47px;
 }
 
-.mt-\[60px\] {
-  margin-top: 60px;
-}
-
 .mt-\[55px\] {
   margin-top: 55px;
+}
+
+.mt-\[60px\] {
+  margin-top: 60px;
 }
 
 .block {
@@ -891,6 +891,10 @@ video {
 
 .h-\[150px\] {
   height: 150px;
+}
+
+.h-\[200px\] {
+  height: 200px;
 }
 
 .h-\[248px\] {
@@ -943,14 +947,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[250px\] {
-  height: 250px;
-}
-
-.h-\[200px\] {
-  height: 200px;
 }
 
 .min-h-\[100vh\] {
@@ -1340,10 +1336,6 @@ video {
   border-width: 1px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border-x {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -1376,11 +1368,6 @@ video {
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
-}
-
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#252525\] {
@@ -1421,6 +1408,11 @@ video {
 .bg-\[\#F8EFFF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(248 239 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#F9F5D4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 245 212 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#FFF0F2\] {
@@ -1584,14 +1576,14 @@ video {
   padding-bottom: 40px;
 }
 
-.py-\[6px\] {
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
-
 .py-\[55px\] {
   padding-top: 55px;
   padding-bottom: 55px;
+}
+
+.py-\[6px\] {
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .pb-8 {
@@ -1676,10 +1668,6 @@ video {
 
 .pt-\[40px\] {
   padding-top: 40px;
-}
-
-.pt-\[55px\] {
-  padding-top: 55px;
 }
 
 .text-center {
@@ -1866,6 +1854,11 @@ video {
 .text-\[\#FF518F\] {
   --tw-text-opacity: 1;
   color: rgb(255 81 143 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#FF584A\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 88 74 / var(--tw-text-opacity, 1));
 }
 
 .text-black {
@@ -2505,6 +2498,10 @@ ul.v2-slides {
     line-height: 1.75rem;
   }
 
+  .md\:text-\[32px\] {
+    font-size: 32px;
+  }
+
   .md\:font-medium {
     font-weight: 500;
   }
@@ -2535,6 +2532,14 @@ ul.v2-slides {
 
   .md\:leading-\[72px\] {
     line-height: 72px;
+  }
+
+  .md\:leading-\[60px\] {
+    line-height: 60px;
+  }
+
+  .md\:leading-\[36px\] {
+    line-height: 36px;
   }
 }
 
