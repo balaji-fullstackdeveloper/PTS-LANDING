@@ -4,8 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
-  <link rel="stylesheet" href="./css/styles.css">
+{% if page.url == "/" %}
+   <link rel="stylesheet" href="./css/styles.css">
   <script src="./assets/js/animation.js"></script>
+  <script src="./assets/js/main.js"></script>
+{% else %}
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../assets/js/animation.js"></script>
+  <script src="../assets/js/main.js"></script>
+{% endif %}
+
   <!-- GSAP -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.2/dist/gsap.min.js"></script>
 
@@ -15,7 +23,7 @@
 </head>
 <body class=" font-outfit text-gray-800">
   
-  {% include "partials/header.html" %}
+
   
   <main>
     {{ content | safe }}
@@ -23,6 +31,6 @@
   
   {% include "partials/footer.html" %}
   
-  <script src="/assets/js/main.js"></script>
+  
 </body>
 </html> 
