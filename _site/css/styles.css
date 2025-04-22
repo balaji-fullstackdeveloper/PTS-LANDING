@@ -917,10 +917,6 @@ video {
   height: 44px;
 }
 
-.h-\[500px\] {
-  height: 500px;
-}
-
 .h-\[50px\] {
   height: 50px;
 }
@@ -953,8 +949,36 @@ video {
   height: 900px;
 }
 
+.h-\[90vh\] {
+  height: 90vh;
+}
+
 .h-full {
   height: 100%;
+}
+
+.h-\[80vh\] {
+  height: 80vh;
+}
+
+.h-\[70vh\] {
+  height: 70vh;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[85vh\] {
+  height: 85vh;
+}
+
+.h-\[88vh\] {
+  height: 88vh;
+}
+
+.h-\[87vh\] {
+  height: 87vh;
 }
 
 .min-h-\[100vh\] {
@@ -965,8 +989,24 @@ video {
   min-height: 311px;
 }
 
+.min-h-\[650px\] {
+  min-height: 650px;
+}
+
 .min-h-\[657px\] {
   min-height: 657px;
+}
+
+.min-h-\[600px\] {
+  min-height: 600px;
+}
+
+.min-h-\[500px\] {
+  min-height: 500px;
+}
+
+.min-h-\[400px\] {
+  min-height: 400px;
 }
 
 .w-12 {
@@ -1212,6 +1252,10 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -1636,6 +1680,11 @@ video {
 .py-\[6px\] {
   padding-top: 6px;
   padding-bottom: 6px;
+}
+
+.px-\[16px\] {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .pb-8 {
@@ -2239,6 +2288,10 @@ ul.v2-slides {
     margin-right: 88px;
   }
 
+  .md\:mb-\[120px\] {
+    margin-bottom: 120px;
+  }
+
   .md\:ml-20 {
     margin-left: 5rem;
   }
@@ -2267,6 +2320,10 @@ ul.v2-slides {
     margin-top: 1rem;
   }
 
+  .md\:mt-\[11px\] {
+    margin-top: 11px;
+  }
+
   .md\:mt-\[120px\] {
     margin-top: 120px;
   }
@@ -2281,14 +2338,6 @@ ul.v2-slides {
 
   .md\:mt-\[40px\] {
     margin-top: 40px;
-  }
-
-  .md\:mt-\[11px\] {
-    margin-top: 11px;
-  }
-
-  .md\:mb-\[120px\] {
-    margin-bottom: 120px;
   }
 
   .md\:block {
@@ -2535,11 +2584,6 @@ ul.v2-slides {
     padding-right: 15%;
   }
 
-  .md\:px-\[25\%\] {
-    padding-left: 25%;
-    padding-right: 25%;
-  }
-
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -2579,6 +2623,10 @@ ul.v2-slides {
 
   .md\:pb-\[30px\] {
     padding-bottom: 30px;
+  }
+
+  .md\:pb-\[70px\] {
+    padding-bottom: 70px;
   }
 
   .md\:pb-\[80px\] {
@@ -2690,6 +2738,10 @@ ul.v2-slides {
     line-height: 1.75rem;
   }
 
+  .md\:text-\[60px\] {
+    font-size: 60px;
+  }
+
   .md\:font-medium {
     font-weight: 500;
   }
@@ -2732,6 +2784,10 @@ ul.v2-slides {
 
   .md\:leading-\[80px\] {
     line-height: 80px;
+  }
+
+  .md\:leading-\[84px\] {
+    line-height: 84px;
   }
 }
 
