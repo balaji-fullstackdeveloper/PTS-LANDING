@@ -1,136 +1,54 @@
 <div class="bg-[#EFEAFF] min-h-[100vh] h-full">
-    <div class="">
-        <header class="py-4  container-custom md:h-[11vh]">
-            <div class="relative flex justify-between  animate-slide-in  items-center rounded-full bg-[#F1F1FF] md:min-h-[64px] h-[64px]   py-[6px]">
-                <a href="/" class="flex items-center">
-                    <img src="../assets/images/Group 34686.svg" alt="logo" class="h-[50px] w-[50px] ml-2 mr-4" />
-                    <span class="ml-2 text-lg 2xl:text-xl font-medium text-[#252525]">Plattr Tech Studio</span
-                >
-              </a>
-          
-              <div class="flex items-center mr-2 gap-[90px]">
-                <nav class="hidden md:flex items-center gap-5 text-base">
-                  <a href="/" class="font-normal text-gray-900 hover:text-blue-600"
-                    >What We Do</a
-                  >
-                  <a
-                    href="/services"
-                    class="font-normal text-gray-900 hover:text-blue-600"
-                    >Our Work</a
-                  >
-                  <a
-                    href="/features"
-                    class="font-normal text-gray-900 hover:text-blue-600"
-                    >Meet the Team</a
-                  >
-                  <a href="/contact" class="font-normal text-gray-900 hover:text-blue-600"
-                    >Contact Us</a
-                  >
-                </nav>
-              </a><a
-              href="https://calendly.com/plattrlabs/30min"
-              onclick="window.open(this.href, 'popupWindow', 'width=' + (window.innerWidth * 0.8) + ',height=' + (window.innerHeight * 0.8) + ',scrollbars=yes'); return false;"
-              class="hidden md:inline-flex gap-2 items-center justify-center h-[44px] w-[143px]  md:h-[48px] md:w-[162px] bg-[#2B4DFF] text-white font-medium rounded-full hover:bg-blue-700 transition-colors"
+  <div class="">
+    {% include "partials/header.html" %}
+    <section id="hero" class="container-custom">
+      <div class="md:flex md:justify-center md:flex-row-reverse w-full">
+        <div
+          class="mt-[40px] flex justify-center md:w-[50%] opacity-0 animate-zoom-in md:h-[89vh] md:flex-col md:items-center"
+        >
+          <div
+            class="w-[248px] z-10 h-[248px] md:w-[450px] md:h-[376px] bg-white"
+          ></div>
+        </div>
+        <div
+          class="mt-[40px] md:w-[50%] md:h-[89vh] md:flex md:flex-col md:items-center md:justify-center opacity-0 animate-zoom-in"
+        >
+          <div class="md:ml-[80px]">
+            <p
+              class="text-[28px] md:text-[48px] font-semibold md:font-medium text-center leading-[74px] md:text-start"
+            >
+              Our Web Development Expertise
+            </p>
+            <p
+              class="text-[14px] md:text-[16px] font-normal text-center mt-[16px] md:mt-[24px] leading-[30px] md:text-start"
+            >
+              Lorem ipsum dolor sit amet consectetur. Iaculis non praesent
+              tempor faucibus pellentesque a. In augue at morbi pellentesque
+              aenean aliquam egestas egestas eleifend.
+            </p>
+            <div
+              class="mt-[60px] pb-[98px] flex justify-center md:justify-start"
+            >
+              <a
+                href="https://calendly.com/plattrlabs/30min"
+                onclick="window.open(this.href, 'popupWindow', 'width=' + (window.innerWidth * 0.8) + ',height=' + (window.innerHeight * 0.8) + ',scrollbars=yes'); return false;"
+                class="inline-flex gap-2 items-center justify-center h-[44px] w-[143px] md:h-[48px] md:w-[162px] bg-[#2B4DFF] text-white font-medium rounded-full hover:bg-blue-700 transition-colors"
               >
                 Book a Call
-                <div class="relative  flex flex-col justify-center items-center"> <div class="bg-white rounded-full w-6 h-6"></div>
-                <img
-                  class="absolute "
-                  src="../assets/images/Vector.svg"
-                  alt=""
-                  srcset=""
-                /></div>
-               </a>
-          
-                <button class="md:hidden text-gray-900" id="mobile-menu-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h16m-7 6h7"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          
-            <!-- Mobile Menu -->
-            <div
-              class="md:hidden z-10 hidden absolute animate-slide-in w-full bg-white shadow-xl rounded-xl mt-3 text-sm"
-              id="mobile-menu"
-            >
-              <div
-                class=" py-7 space-y-4 flex flex-col justify-center items-center"
-              >
-                <a href="/" class="block font-medium text-gray-900 hover:text-blue-600"
-                  >What We Do</a
-                >
-                <a
-                  href="/services"
-                  class="block font-medium text-gray-900 hover:text-blue-600"
-                  >Our Work</a
-                >
-                <a
-                  href="/features"
-                  class="block font-medium text-gray-900 hover:text-blue-600"
-                  >Meet the Team</a
-                >
-                <a
-                  href="/contact"
-                  class="block font-medium text-gray-900 hover:text-blue-600"
-                  >Contact Us</a
-                >
-          
-                <div
-                  href="/book-demo"
-                  class="inline-flex relative items-center justify-center w-50 px-5 py-2.5 bg-[#2B4DFF] text-white font-medium rounded-full hover:bg-blue-700 transition-colors"
-                >
-                  <p>Book a Call</p>
-                  <div class="bg-white rounded-full w-6 h-6 ml-2"></div>
+                <div class="relative flex flex-col justify-center items-center">
+                  <div class="bg-white rounded-full w-6 h-6"></div>
                   <img
-                    class="absolute right-[26px]"
+                    class="absolute"
                     src="../assets/images/Vector.svg"
                     alt=""
                     srcset=""
                   />
                 </div>
-              </div>
+              </a>
             </div>
-          </header>
-          <section id="hero" class="container-custom">
-            <div class="md:flex md:justify-center md:flex-row-reverse w-full ">
-              <div class="mt-[40px]  flex justify-center md:w-[50%] opacity-0 animate-zoom-in  md:h-[89vh] md:flex-col md:items-center  ">
-                <div class="w-[248px] z-10 h-[248px] md:w-[450px] md:h-[376px] bg-white "></div>
-              </div>
-              <div class="mt-[40px]   md:w-[50%] md:h-[89vh] md:flex md:flex-col md:items-center md:justify-center opacity-0 animate-zoom-in">
-               <div class="md:ml-[80px]">
-                <p class="text-[28px] md:text-[48px] font-semibold md:font-medium text-center leading-[74px] md:text-start">Our Web Development Expertise</p>
-                <p class="text-[14px] md:text-[16px] font-normal text-center mt-[16px] md:mt-[24px] leading-[30px] md:text-start">Lorem ipsum dolor sit amet consectetur. Iaculis non praesent tempor faucibus pellentesque a. In augue at morbi pellentesque aenean aliquam egestas egestas eleifend.</p>
-                <div class="mt-[60px] pb-[98px] flex justify-center md:justify-start">               <a
-                  href="https://calendly.com/plattrlabs/30min"
-             onclick="window.open(this.href, 'popupWindow', 'width=' + (window.innerWidth * 0.8) + ',height=' + (window.innerHeight * 0.8) + ',scrollbars=yes'); return false;"
-                   class="inline-flex gap-2 items-center justify-center h-[44px] w-[143px]  md:h-[48px] md:w-[162px] bg-[#2B4DFF] text-white font-medium rounded-full hover:bg-blue-700 transition-colors"
-                 >
-                   Book a Call
-                   <div class="relative  flex flex-col justify-center items-center"> <div class="bg-white rounded-full w-6 h-6"></div>
-                   <img
-                     class="absolute "
-                     src="../assets/images/Vector.svg"
-                     alt=""
-                     srcset=""
-                   /></div>
-                  </a></div></div>
- 
-              </div>
-            
-            </div>
-          </section>
-    </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </div>
