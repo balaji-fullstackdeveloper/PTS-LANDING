@@ -31,7 +31,7 @@
   <main>
     
 <div class="">
-  <header class="pt-4 container-custom md:h-[10vh] ">
+  <header class="pt-4 container-custom md:h-[10vh] relative z-[9999]">
     <div class="relative flex justify-between  animate-slide-in  items-center rounded-full bg-[#F1F1FF] md:min-h-[64px] h-[64px]   py-[6px]">
         <a href="/" class="flex items-center">
             <img src="../assets/images/Group 34686.svg" alt="logo" class="h-[50px] w-[50px] ml-2 mr-4" />
@@ -41,9 +41,20 @@
   
       <div class="flex items-center mr-2 gap-[90px]">
         <nav class="hidden md:flex items-center gap-5 text-base">
-          <a href="/" class="font-normal text-gray-900 hover:text-blue-600"
-            >What We Do</a
-          >
+          <div class="relative group">
+            <a class="font-normal text-gray-900 hover:text-blue-600 cursor-pointer flex items-center gap-1"
+              >What We Do
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+            <div class="absolute z-[9999] invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out w-48 bg-white border border-gray-200 rounded-lg shadow-lg py-2 mt-2 left-0">
+              <a href="/web-development" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600 transition-colors">Web Development</a>
+              <a href="/mobile-development" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600 transition-colors">Mobile Development</a>
+              <a href="/ai-ml-services" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600 transition-colors">AI/ML Services</a>
+              <a href="/devops-services" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600 transition-colors">DevOps Services</a>
+            </div>
+          </div>
           <a
             href="/services"
             class="font-normal text-gray-900 hover:text-blue-600"
@@ -100,22 +111,30 @@
       <div
         class="container-custom py-7 space-y-4 flex flex-col justify-center items-center"
       >
-        <a href="/" class="block font-medium text-gray-900 hover:text-blue-600"
-          >What We Do</a
-        >
-        <a
-          href="/services"
-          class="block font-medium text-gray-900 hover:text-blue-600"
-          >Our Work</a
-        >
+        <div class="flex flex-col items-center space-y-2 w-full">
+          <button onclick="toggleMobileDropdown()" class="flex items-center gap-1 font-medium text-[#252525]">
+            What We Do
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform mobile-dropdown-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="mobileDropdown" class="hidden flex flex-col ml-[24px]  gap-[4px]   w-full">
+            <a href="/web-development" class="block text-[16px] font-[400] py-[8px]   text-[#252525] hover:text-blue-600">Web Development</a>
+            <a href="/mobile-development" class="block text-[16px] font-[400] py-[8px] text-[#252525] hover:text-blue-600">Mobile Development</a>
+            <a href="/ai-ml-services" class="block text-[16px] font-[400] py-[8px] text-[#252525] hover:text-blue-600">AI/ML Services</a>
+            <a href="/devops-services" class="block text-[16px] font-[400] py-[8px] text-[#252525] hover:text-blue-600">DevOps Services</a>
+          </div>
+        </div>
+        <a href="/services" class="block font-medium text-[#252525] hover:text-blue-600">Our Work</a
+            >
         <a
           href="/features"
-          class="block font-medium text-gray-900 hover:text-blue-600"
+          class="block font-medium text-[#252525] hover:text-blue-600"
           >Meet the Team</a
         >
         <a
           href="/contact"
-          class="block font-medium text-gray-900 hover:text-blue-600"
+          class="block font-medium text-[#252525] hover:text-blue-600"
           >Contact Us</a
         >
   
@@ -135,6 +154,14 @@
       </div>
     </div>
   </header>
+  <script>
+    function toggleMobileDropdown() {
+      const dropdown = document.getElementById('mobileDropdown');
+      const icon = document.querySelector('.mobile-dropdown-icon');
+      dropdown.classList.toggle('hidden');
+      icon.style.transform = dropdown.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+    }
+  </script>
 
   <div
     class="container-custom md:h-[90vh] md:min-h-[650px] md:flex md:flex-col md:items-center md:justify-between"
