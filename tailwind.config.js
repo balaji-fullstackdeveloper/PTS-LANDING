@@ -61,7 +61,7 @@ module.exports = {
         },
       },
       animation: {
-        "slide-up": "slideUp 0.5s ease-out forwards",
+        "slide-up": "slideUp 1s ease-out forwards",
         "zoom-in": "zoomIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards",
         "zoom-in-scroll": "zoomIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards",
         "slide-right":
