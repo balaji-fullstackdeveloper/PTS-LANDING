@@ -1031,12 +1031,12 @@ video {
   height: 64px;
 }
 
-.h-\[69px\] {
-  height: 69px;
+.h-\[65\%\] {
+  height: 65%;
 }
 
-.h-\[70\%\] {
-  height: 70%;
+.h-\[69px\] {
+  height: 69px;
 }
 
 .h-\[70vw\] {
@@ -1065,26 +1065,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[60\%\] {
-  height: 60%;
-}
-
-.h-\[h-\[80\%\]\] {
-  height: h-[80%];
-}
-
-.h-\[65\%\] {
-  height: 65%;
-}
-
-.h-\[90\%\] {
-  height: 90%;
-}
-
-.h-\[300px\] {
-  height: 300px;
 }
 
 .min-h-\[100vh\] {
