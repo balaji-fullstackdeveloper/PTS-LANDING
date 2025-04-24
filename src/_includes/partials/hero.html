@@ -1,5 +1,5 @@
 <header class="py-4 container-custom ">
-    <div class="relative flex justify-between  animate-slide-in  items-center rounded-full bg-[#F1F1FF] md:min-h-[64px] 2xl:h-[8vh] py-[6px]">
+    <div class="relative flex justify-between  animate-slide-in z-[99]  items-center rounded-full bg-[#F1F1FF] md:min-h-[64px] 2xl:h-[8vh] py-[6px]">
         <a href="/" class="flex items-center">
             <img src="./assets/images/Group 34686.svg" alt="logo" class="h-[50px] w-[50px] ml-2 mr-4" />
             <span class="ml-2 text-lg 2xl:text-xl font-medium text-[#252525]">Plattr Tech Studio</span
@@ -8,9 +8,20 @@
 
     <div class="flex items-center mr-2 gap-[90px]">
       <nav class="hidden md:flex items-center gap-5 text-base">
-        <a href="/" class="font-normal text-gray-900 hover:text-blue-600"
-          >What We Do</a
-        >
+        <div class="relative group">
+          <a class="font-normal text-gray-900 hover:text-blue-600 cursor-pointer flex items-center gap-1"
+            >What We Do
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+          <div class="absolute z-[9999] invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out w-48 bg-white border border-gray-200 rounded-lg shadow-lg py-2 mt-2 left-0">
+            <a href="/web-development" class="block px-4 py-2 text-gray-800  hover:text-blue-600 transition-colors">Web Development</a>
+            <a href="/mobile-development" class="block px-4 py-2 text-gray-800  hover:text-blue-600 transition-colors">Mobile Development</a>
+            <a href="/ai-ml-services" class="block px-4 py-2 text-gray-800  hover:text-blue-600 transition-colors">AI/ML Services</a>
+            <a href="/devops-services" class="block px-4 py-2 text-gray-800  hover:text-blue-600 transition-colors">DevOps Services</a>
+          </div>
+        </div>
         <a
           href="/service"
           class="font-normal text-gray-900 hover:text-blue-600"

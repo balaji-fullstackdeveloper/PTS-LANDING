@@ -29,7 +29,7 @@
   <main>
     
 <header class="py-4 container-custom ">
-    <div class="relative flex justify-between  animate-slide-in  items-center rounded-full bg-[#F1F1FF] md:min-h-[64px] 2xl:h-[8vh] py-[6px]">
+    <div class="relative flex justify-between  animate-slide-in z-[99]  items-center rounded-full bg-[#F1F1FF] md:min-h-[64px] 2xl:h-[8vh] py-[6px]">
         <a href="/" class="flex items-center">
             <img src="./assets/images/Group 34686.svg" alt="logo" class="h-[50px] w-[50px] ml-2 mr-4" />
             <span class="ml-2 text-lg 2xl:text-xl font-medium text-[#252525]">Plattr Tech Studio</span
@@ -38,9 +38,20 @@
 
     <div class="flex items-center mr-2 gap-[90px]">
       <nav class="hidden md:flex items-center gap-5 text-base">
-        <a href="/" class="font-normal text-gray-900 hover:text-blue-600"
-          >What We Do</a
-        >
+        <div class="relative group">
+          <a class="font-normal text-gray-900 hover:text-blue-600 cursor-pointer flex items-center gap-1"
+            >What We Do
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+          <div class="absolute z-[9999] invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out w-48 bg-white border border-gray-200 rounded-lg shadow-lg py-2 mt-2 left-0">
+            <a href="/web-development" class="block px-4 py-2 text-gray-800  hover:text-blue-600 transition-colors">Web Development</a>
+            <a href="/mobile-development" class="block px-4 py-2 text-gray-800  hover:text-blue-600 transition-colors">Mobile Development</a>
+            <a href="/ai-ml-services" class="block px-4 py-2 text-gray-800  hover:text-blue-600 transition-colors">AI/ML Services</a>
+            <a href="/devops-services" class="block px-4 py-2 text-gray-800  hover:text-blue-600 transition-colors">DevOps Services</a>
+          </div>
+        </div>
         <a
           href="/service"
           class="font-normal text-gray-900 hover:text-blue-600"
@@ -1121,127 +1132,6 @@
 
 
   </main>
-<footer class="bg-gray-900 text-white pt-16">
-  <div class="container-custom">
-    <div
-      class="grid grid-cols-2 md:grid-cols-5 gap-8 md:flex md:justify-between mr-[5%]"
-    >
-      <!-- Company Info -->
-
-      <div class="col-span-2 md:col-span-1 w-[258px]">
-        <a
-          href="/"
-          class="flex items-center justify-between mb-[30px] h-[55px]"
-        >
-          
-          <img src="./assets/images/Group 34686.svg " alt="" srcset="" />
-          
-          
-          <p class="text-[24px] font-bold text-white">Plattr Tech Studio</p>
-        </a>
-        <p class="text-gray-400 text-sm mb-[30px] pr-10">
-          Lorem ipsum dolor sit amet consectetur. Iaculis non praesent tempor
-          faucibus pellentesque a. In augue at morbi pellentesque aenean aliquam
-          egestas egestas eleifend.
-        </p>
-        <div class="flex gap-[24px] h-[25px] w-[25px]">
-          
-          <img src="./assets/images/linkedin (1).png" alt="" srcset="" />
-          <img src="./assets/images/twitter (1).png" alt="" srcset="" />
-          <img src="./assets/images/facebook (1).png" alt="" srcset="" />
-          <img src="./assets/images/instagram (1).png" alt="" srcset="" />
-          
-   
-        </div>
-      </div>
-
-      <!-- Quick Links -->
-
-      <div class="col-span-1">
-        <h3 class="text-lg font-medium mb-6">What We Do</h3>
-        <ul class="space-y-4">
-          <li>
-            <a href="/" class="text-gray-400 hover:text-white"
-              >Web Development</a
-            >
-          </li>
-          <li>
-            <a href="/services" class="text-gray-400 hover:text-white"
-              >Mobile App Development</a
-            >
-          </li>
-          <li>
-            <a href="/about" class="text-gray-400 hover:text-white">
-              AI/ML Development
-            </a>
-          </li>
-          <li>
-            <a href="/contact" class="text-gray-400 hover:text-white">
-              DevOps as a Service
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Services -->
-      <div class="col-span-1">
-        <h3 class="text-lg font-medium mb-6">Why us?</h3>
-        <ul class="space-y-4">
-          <li>
-            <a href="#" class="text-gray-400 hover:text-white">
-              Why Choose PTS
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
-      <div class="col-span-1">
-        <h3 class="text-lg font-medium mb-6">Company</h3>
-        <ul class="space-y-4">
-          <li>
-            <a href="#" class="text-gray-400 hover:text-white">About Us</a>
-          </li>
-          <li>
-            <a href="#" class="text-gray-400 hover:text-white">Career</a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
-      <div class="col-span-1">
-        <h3 class="text-lg font-medium mb-6">Information</h3>
-        <ul class="space-y-4">
-          <li>
-            <a
-              href="/services/web-development"
-              class="text-gray-400 hover:text-white"
-              >Terms & Conditions</a
-            >
-          </li>
-          <li>
-            <a
-              href="/services/mobile-app"
-              class="text-gray-400 hover:text-white"
-              >Privacy</a
-            >
-          </li>
-          <li>
-            <a href="/services/ui-ux" class="text-gray-400 hover:text-white"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="-t -gray-800 mt-12 py-[16px] text-center">
-      <p class="text-gray-400 text-sm">
-        C.2025.Plattr Tech Studio. All Rights Reserved
-      </p>
-    </div>
-  </div>
-</footer>
 
 </body>
 </html> 
